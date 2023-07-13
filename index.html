@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Reserva</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+</head>
+<body>
+
+    <div class="form-container">
+        
+        <form id="consultaForm" action="/consultar_reserva" method="GET">
+            <h2>¡Consultá tu itinerario acá!</h2>
+            <label for="dni">Ingresá el DNI del titular de la reserva:</label>
+            <input type="text" id="dni" name="dni" required>
+            <button type="submit">Consultar</button>
+        </form>
+    
+        
+    </div>
+    <div id="resultados"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
